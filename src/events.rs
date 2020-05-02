@@ -14,3 +14,9 @@ pub struct MessageEvent {
     #[serde(rename = "userId")]
     pub user_id: i32,
 }
+
+#[derive(Debug, Serialize, Deserialize)]
+pub struct ClientEventQueueNameWrapper {
+    #[serde(rename = "queueName")]
+    pub queue_name: String,
+}
