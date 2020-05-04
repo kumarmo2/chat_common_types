@@ -7,3 +7,11 @@ pub struct RoomInfo {
     pub path: String,
     pub member_ids: Vec<i32>,
 }
+
+#[derive(Debug, Serialize, Deserialize)]
+pub struct Queue {
+    #[serde(rename = "userId")]
+    pub user_id: i32,
+    #[serde(rename = "queueName")]
+    pub queue_name: String,
+}
