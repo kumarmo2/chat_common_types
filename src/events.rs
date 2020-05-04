@@ -13,6 +13,8 @@ pub struct MessageEvent {
     pub event_type: MessageEventType,
     #[serde(rename = "userId")]
     pub user_id: i32,
+    #[serde(rename = "roomId")]
+    pub room_id: i32,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
