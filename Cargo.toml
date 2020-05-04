@@ -1,6 +1,6 @@
 [package]
 name = "chat_common_types"
-version = "0.2.2"
+version = "0.2.3"
 authors = ["kumarmo2 <mohitkumar1015795@gmail.com>"]
 edition = "2018"
 
