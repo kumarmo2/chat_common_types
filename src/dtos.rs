@@ -15,3 +15,13 @@ pub struct Queue {
     #[serde(rename = "queueName")]
     pub queue_name: String,
 }
+
+#[derive(Debug, Serialize, Deserialize)]
+pub struct Message {
+    pub id: i32,
+    #[serde(rename = "roomId")]
+    pub room_id: i32,
+    #[serde(rename = "senderId")]
+    pub sender_id: i32,
+    pub content: String,
+}
