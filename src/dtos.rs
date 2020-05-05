@@ -16,7 +16,7 @@ pub struct Queue {
     pub queue_name: String,
 }
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Serialize, Deserialize, Default)]
 pub struct Message {
     pub id: i32,
     #[serde(rename = "roomId")]
